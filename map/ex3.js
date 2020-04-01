@@ -61,6 +61,8 @@ Expected OUTPUT for this sample:
 
  */
 
+
+ 
 function getMoviesFreshness(movies) {
 }
 

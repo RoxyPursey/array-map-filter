@@ -25,8 +25,13 @@ Expected OUTPUT for this sample array:
   ]
 
 */
+const words = ['Chicken', 'Bacon','Tofu','Mayonnaise'];
 
-function getStringsLength(strings) {
+function getStringsLength(words) {
+  const wordLengthArray = words.map(function(words){
+        return `${words} contains ${words.length} characters`
+});
+return wordLengthArray;
 }
 
 // If you need, you can always visualize the result with a console.log.

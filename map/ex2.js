@@ -41,10 +41,24 @@ Expected OUTPUT for this sample
   ]
 
 */
+const foodArray = [
+{food: 'Bacon',isVegetarian: false},
+{food: 'Sausage',isVegetarian: false},
+{food: 'Tofu', isVegetarian: true},
+{food: 'Chick Pea', isVegetarian: true},
+]
 
-function getFoodCategories(foods) {
+function getFoodCategories(foodArray){
+  const result = foodArray.map(function(object){
+    if (object.isVegetarian === true) {
+        return `${object.food} is suitable for vegetarians`
+    }
+     else {
+      return `${object.food} is not suitable for vegetarians`
+    }
+  })
+  return result
 }
-
 
 
 // DON'T TOUCH THIS!
