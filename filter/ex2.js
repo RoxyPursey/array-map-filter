@@ -25,7 +25,12 @@ Expected OUTPUT for this sample:
 
 */
 
+
 function keepStarks(names) {
+  const isStark = names.filter(stark =>{
+    return stark.endsWith("Stark")
+  })
+  return isStark;
 }
 
 // DON'T TOUCH THIS!
